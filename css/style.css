@@ -1,4 +1,7 @@
 header {
     background-color: gray;
     border: 5px solid black;
+    color: white;
+    display: flex;
+    vertical-align: middle;
 }

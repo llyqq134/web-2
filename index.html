@@ -11,8 +11,13 @@
 
 <body>
     <header class="header">
-        <div style="width: 900px; padding: 10px; height: 120px; margin: 0 auto;">
+        <div style="width: 100%; padding: 10px; height: 120px;">
             <img style="float: left; margin: 10px; width: 100px;" src="images/0x0.png">
+             <nav style="float: right; margin-right: 15px">
+                <a style="color: white" href="https://kubsu.ru">Сайт кубгу</a> | 
+                <a style="color: white" href="#form">Форма для заполнения</a> | 
+                <a style="color: white" href="https://htmlbook.ru">htmlbook</a>
+            </nav>
         </div>
     </header>
     <ul>
@@ -23,7 +28,11 @@
             <a href="https://vx-underground.org" title="vx-underground">
                 <img src="images/malware.jpg" alt="malware" style="width: 300px">
             </a>
-        </li>
+        </li>nav-header {
+            display: flex;
+            align-items: right;
+            justify-content: space-around;
+        }
         <li><a href="/">сокращенная ссылка на внутреннюю страницу</a></li>
         <li><a href="/main">сокращенная ссылка на главную страницу</a></li>
         <li><a href="#form">ссылка на фрагмент текущей страницы</a></li>
@@ -54,7 +63,7 @@
         <li>
             <a id="notallowed" href="https://someillegalpage.com">запрещенная для индексации поисковиками</a>
         </li>
-        <li><a href="ftp://logit:password123@page.ru/files/index.html">Ссылка на файл на сервере FTP с авторизацией</a>
+        <li><a href="ftp://login:password123@page.ru/files/index.html">Ссылка на файл на сервере FTP с авторизацией</a>
         </li>
     </ul>
     <p>Нумерованный список ссылок с подписями title:</p>
