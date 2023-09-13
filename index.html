@@ -14,14 +14,15 @@
         <div style="width: 100%; padding: 10px; height: 120px;">
             <img style="float: left; margin: 10px; width: 100px;" src="images/0x0.png" alt="лого">
             <nav style="float: right; margin-right: 15px">
-                <a style="color: white" href="https://kubsu.ru">Сайт кубгу</a> |
-                <a style="color: white" href="#form">Форма для заполнения</a> |
-                <a style="color: white" href="https://htmlbook.ru">htmlbook</a>
+                <a style="color: white" href="#id-content">Гиперссылки</a> |
+                <a style="color: white" href="#id-table">Таблица</a> |
+                <a style="color: white" href="#id-form">Форма</a> |
+                <a style="color: white" href="#id-footer">Подвал</a>
             </nav>
         </div>
     </header>
 
-    <div id="content">
+    <div class="content" id="id-content">
         <div class="hyperlink-list">
             <ul>
                 <li><a href="http://kubsu.ru" title="kubsu">абсолютная гиперссылка на главную страницу кубгу</a></li>
@@ -34,7 +35,7 @@
                 </li>
                 <li><a href="/">сокращенная ссылка на внутреннюю страницу</a></li>
                 <li><a href="/main">сокращенная ссылка на главную страницу</a></li>
-                <li><a href="#form">ссылка на фрагмент текущей страницы</a></li>
+                <li><a href="#id-form">ссылка на фрагмент текущей страницы (на форму)</a></li>
                 <li><a href="https://kubsu.ru/?hl=ru&page=home&param3=p3">Ссылка с тремя параметрами в url</a></li>
                 <li><a href="index">относительная ссылка на страницу в текущем каталоге</a></li>
                 <li><a href="./about/index">относительная на страницу в каталоге about</a></li>
@@ -78,9 +79,66 @@
             </ol>
         </div>
 
-        <div class="form">
+        <div class="table" id="id-table">
+            <table style="width: 500px;">
+                <caption style="border-bottom: 1px solid black; margin-bottom: 5px">Поддержка CSS свойств браузерами</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thread>
+                    <tr style="background-color: bisque">
+                        <th>Свойство</th>
+                        <th>Firefox</th>
+                        <th>Chrome</th>
+                        <th>Opera</th>
+                    </tr>
+                    <tr style="background-color: rgb(3, 233, 233)">
+                        <th>align-items</th>
+                        <th>20</th>
+                        <th>21</th>
+                        <th>12.1</th>
+                    </tr>
+                    <tr style="background-color: bisque">
+                        <th>border</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>3.5</th>
+                    </tr>
+                    <tr style="background-color: rgb(3, 233, 233)">
+                        <th>flex</th>
+                        <th>28</th>
+                        <th>29</th>
+                        <th>17</th>
+                    </tr>
+                    <tr style="background-color: bisque">
+                        <th>break-inside</th>
+                        <th colspan="2">Не поддерживает</th>
+                        <th>11.1</th>
+                    </tr>
+                    <tr style="background-color: rgb(3, 233, 233)">
+                        <th>column-span</th>
+                        <th>Не поддерживает</th>
+                        <th>50</th>
+                        <th>37</th>
+                    </tr>
+                    <tr style="background-color: bisque">
+                        <th>margin</th>
+                        <th>1</th>
+                        <th>1</th>
+                        <th>1</th>
+                    </tr>
+                </thread>
+            </table>
+        </div>    
+
+        <p></p>
+
+        <div class="form" id="id-form">
             Заполните форму:
-            <form action="https://someform.com" method="POST" id="form">
+            <form action="https://someform.com" method="POST">
                 <p><label>
                         Имя:<br>
                         <input name="field-fullname" placeholder="Фамилия Имя Отчество" value=""><br>
@@ -127,10 +185,12 @@
             </form>
         </div>
     </div>
+
     <p></p>
+
     <hr>
     <footer>
-        <div class="footer" style="max-width: 100%; height: 60px">
+        <div class="footer" id="id-footer" style="max-width: 100%; height: 60px">
             <a style="margin-left: 10px; margin-bottom: 10px">©Дикий Кирилл</a>
             <a style="color: #0969DA; margin-right: 10px; margin-bottom: 10px" href="https://github.com/llyqq134">Ссылка
                 на github</a>
