@@ -14,9 +14,20 @@ footer {
     max-width: 100%;
 }
 
+th {
+    width: 250px;
+    border: 1px solid black;
+    font-weight: normal;
+}
+
 .footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: end;
+}
+
+.table {
+    border: 1px solid black;
+    max-width: fit-content;
 }
