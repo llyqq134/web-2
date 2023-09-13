@@ -3,5 +3,20 @@ header {
     border: 5px solid black;
     color: white;
     display: flex;
-    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    height: 60px;
+    max-width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
 }
